@@ -9,6 +9,10 @@
 
 Web2Img AI Studio 是一个基于 **Go + Wails + React** 的 Windows 桌面应用。它把「批量账号注册 → 账号池管理 → 调度出图/出视频」整条链路打包成一个开箱即用的本地工具，所有数据（账号、令牌、历史）均**保存在本地**并加密存储。
 
+## 📸 界面预览
+
+![Web2Img AI Studio 界面预览](./docs/screenshot.png)
+
 ---
 
 ## ⚠️ 免责声明 / Disclaimer
