@@ -1,0 +1,21 @@
+build/bin
+node_modules
+frontend/dist
+
+# 运行时数据 / 凭据（切勿提交）
+*.db
+*.key
+config.json
+history.json
+*.env
+.env
+.env.*
+
+# 导入/导出的账号文件
+*pool*.txt
+accounts*.txt
+mailbox*.txt
+
+# 系统文件
+.DS_Store
+Thumbs.db

@@ -1,0 +1,274 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-500: #2563eb;
+  --color-brand-600: #1d4ed8;
+  --color-brand-700: #1e40af;
+  --color-brand-900: #0f2355;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 4px;
+  --radius-xl: 4px;
+  --radius-2xl: 4px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  background: #eef3fb;
+  color: #172033;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 400;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b8c5d8;
+  border: 2px solid #eef3fb;
+}
+
+::-webkit-scrollbar-track {
+  background: #eef3fb;
+}
+
+.app-shell {
+  height: 100vh;
+  min-width: 0;
+  overflow: hidden;
+  background: #eef3fb;
+}
+
+.panel {
+  border: 1px solid #d8e0ec;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.panel-header {
+  border-bottom: 1px solid #e4eaf3;
+  padding: 12px 16px;
+}
+
+.section-title {
+  color: #172033;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.section-desc {
+  margin-top: 2px;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.app-title {
+  color: #172033;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.field-input {
+  width: 100%;
+  min-height: 34px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #172033;
+  outline: none;
+  padding: 7px 10px;
+  font-size: 13px;
+  line-height: 18px;
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.field-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.12);
+}
+
+.btn-primary {
+  min-height: 34px;
+  border: 1px solid #1d4ed8;
+  border-radius: 4px;
+  background: #1d4ed8;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 7px 14px;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+}
+
+.btn-secondary {
+  min-height: 34px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #1f2a44;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 7px 12px;
+  white-space: nowrap;
+}
+
+.btn-secondary:hover {
+  border-color: #2563eb;
+  color: #1d4ed8;
+}
+
+.btn-text {
+  min-height: 30px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  color: #1d4ed8;
+  font-size: 12px;
+  white-space: nowrap;
+  line-height: 16px;
+  padding: 6px 8px;
+}
+
+.btn-text:hover {
+  background: #eff6ff;
+}
+
+.notice-box {
+  border: 1px solid #d8e0ec;
+  border-radius: 4px;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 10px 12px;
+}
+
+.notice-box-blue {
+  border-color: #bfdbfe;
+  background: #eff6ff;
+  color: #334155;
+}
+
+.status-chip {
+  min-height: 30px;
+  border: 1px solid #d8e0ec;
+  border-radius: 4px;
+  background: #f8fafc;
+  color: #475569;
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.status-chip-success {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+  color: #047857;
+}
+
+.tag {
+  min-height: 26px;
+  border: 1px solid #bfdbfe;
+  border-radius: 4px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px 8px;
+}
+
+.tag:hover {
+  border-color: #2563eb;
+}
+
+.window-control {
+  display: grid;
+  height: 32px;
+  width: 38px;
+  place-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  color: #475569;
+  transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.window-control:hover {
+  border-color: #cbd5e1;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.window-control-close:hover {
+  border-color: #dc2626;
+  background: #dc2626;
+  color: #ffffff;
+}
+
+@keyframes poolgen-progress-slide {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(420%);
+  }
+}
+
+.poolgen-progress {
+  animation: poolgen-progress-slide 1.2s ease-in-out infinite;
+}
